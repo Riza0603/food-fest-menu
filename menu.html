@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — Swarna Rajyam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="back-home" href="index.html">← Home</a>
+
+  <main class="menu-page">
+    <h1 class="menu-heading">Royal Feast Menu</h1>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- card template: copy / adjust images names as needed -->
+      <article class="card" data-price="₹30" data-title="Maharaja Corn">
+        <div class="card-media">
+          <img data-src="images/food-corn.png" alt="Maharaja Corn" class="lazy">
+          <div class="shine"></div>
+        </div>
+        <div class="card-body">
+          <h3>Maharaja Corn</h3>
+          <p class="price">₹30</p>
+        </div>
+      </article>
+
+      <article class="card" data-price="₹30" data-title="Darbar Fries / Agni Pataka">
+        <div class="card-media"><img data-src="images/food-fries.png" alt="Darbar Fries" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Darbar Fries / Agni Pataka</h3><p class="price">₹30</p></div>
+      </article>
+
+      <article class="card" data-price="₹20" data-title="Chatpata Boti">
+        <div class="card-media"><img data-src="images/food-boti.png" alt="Chatpata Boti" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Chatpata Boti</h3><p class="price">₹20</p></div>
+      </article>
+
+      <article class="card" data-price="₹40" data-title="Swarna Masala Puri">
+        <div class="card-media"><img data-src="images/food-puri.png" alt="Swarna Masala Puri" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Swarna Masala Puri</h3><p class="price">₹40</p></div>
+      </article>
+
+      <article class="card" data-price="₹20" data-title="Rajmish Phal">
+        <div class="card-media"><img data-src="images/food-phal.png" alt="Rajmish Phal" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Rajmish Phal</h3><p class="price">₹20</p></div>
+      </article>
+
+      <article class="card" data-price="₹30" data-title="Neel Mahal Splash">
+        <div class="card-media"><img data-src="images/food-neel-splash.png" alt="Neel Mahal Splash" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Neel Mahal Splash</h3><p class="price">₹30</p></div>
+      </article>
+
+      <article class="card" data-price="₹20" data-title="Lal Mahal Splash">
+        <div class="card-media"><img data-src="images/food-lal-splash.png" alt="Lal Mahal Splash" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Lal Mahal Splash</h3><p class="price">₹20</p></div>
+      </article>
+
+      <article class="card" data-price="₹20" data-title="Masala Majige">
+        <div class="card-media"><img data-src="images/food-majige.png" alt="Masala Majige" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Masala Majige</h3><p class="price">₹20</p></div>
+      </article>
+
+      <article class="card" data-price="₹20 / ₹30" data-title="Swad Jamun">
+        <div class="card-media"><img data-src="images/food-jamun.png" alt="Swad Jamun" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Swad Jamun</h3><p class="price">₹20 / with Icecream ₹30</p></div>
+      </article>
+
+      <article class="card" data-price="₹10" data-title="Desi Tamaraja">
+        <div class="card-media"><img data-src="images/food-tamaraja.png" alt="Desi Tamaraja" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Desi Tamaraja</h3><p class="price">₹10</p></div>
+      </article>
+
+      <article class="card" data-price="₹15" data-title="Water Bottle">
+        <div class="card-media"><img data-src="images/food-water.png" alt="Water Bottle" class="lazy"><div class="shine"></div></div>
+        <div class="card-body"><h3>Water Bottle</h3><p class="price">₹15</p></div>
+      </article>
+
+    </div> <!-- menu-grid -->
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose">✕</button>
+    <img id="lbImg" alt="">
+    <div class="lb-caption" id="lbCaption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
